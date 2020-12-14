@@ -54,7 +54,7 @@ No. The server must process rewrite rules in `.htaccess`.
 
 == Screenshots ==
 
-There are no screenshots yet.
+1. Checkbox in the file edit dialog
 
 == Upgrade Notice ==
 

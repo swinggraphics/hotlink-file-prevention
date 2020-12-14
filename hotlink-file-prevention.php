@@ -16,7 +16,6 @@
 
 /**
  * @TODO: check for compatibility on activation
- * @TODO: add screenshots
  * @TODO: track ids in options so we can recreate rules upon reactivation
  * @TODO: target our rules with BEGIN and END comments, in case other plugins also edit htaccess
  * @TODO: add global hotlink prevention option
@@ -24,7 +23,7 @@
  */
 
 
-/* Block direct access */
+// Block direct access
 defined( 'WPINC' ) || die;
 
 
