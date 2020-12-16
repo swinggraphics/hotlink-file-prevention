@@ -26,6 +26,10 @@ Once the HFP plugin is activated, you will have two new features in the media li
 
 Any asset that is checked will have "Yes" displayed in the "Hotlink Prevention" column; otherwise, this column will be blank.
 
+= Note about "Open in new tab" option =
+
+When you use the "Open in new tab" option for links, WordPress adds `rel="noreferrer"`, which effectively makes the link act like direct access, and the link will be blocked for files protected using HFP.
+
 == Installation ==
 
 1. Go to "Plugins > Add New" in the WordPress admin area.
@@ -50,7 +54,7 @@ Here's the deal: This plugin makes it harder for people to hotlink to your files
 
 = Does it with with web servers other than Apache?
 
-No. The server must process rewrite rules in `.htaccess`.
+The server must process rewrite rules in `.htaccess`. So HFP will work on Apache and LightSpeed servers, but not NGINX.
 
 == Screenshots ==
 
