@@ -3,7 +3,7 @@ Contributors: electricmill, swinggraphics
 Tags: admin, attachments, files, hotlink, images, media
 Requires at least: 3.8
 Tested up to: 5.6
-Stable tag: 1.1.0
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,9 +42,9 @@ HFP creates an Apache `.htaccess` file in the `wp-content/uploads` directory. It
 
 = Can it be used with any type of media file?
 
-Yes, it works with any file that you upload to the media libary.
+Yes, it works with any file that you upload to the media library.
 
-= Are my files absoutely safe using this plugin?
+= Are my files absolutely safe using this plugin?
 
 Here's the deal: This plugin makes it harder for people to hotlink to your files, but if they are highly technical, they will be able to do things like fake the HTTP referrer.
 
@@ -58,10 +58,21 @@ No. The server must process rewrite rules in `.htaccess`.
 
 == Upgrade Notice ==
 
+= 2.0.0 =
+* Actually works with multiple files now
+* Works cleanly when deactivated and reactivated
+
 = 1.1.0 =
 * Updated to work with newer versions of WordPress.
 
 == Changelog ==
+
+= 2.0.0 =
+* Track protected files in wp_options table instead of individual post meta
+* Fixed htaccess rules to work with multiple protected files
+* Use insert_with_markers() to handle writing to htaccess
+* Added CSS for media library table column
+* Added uninstall hook
 
 = 1.1.0 =
 * Modernized the code, and got it working again!
